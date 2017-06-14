@@ -77,6 +77,10 @@ Repeat command on more than one line in visual mode
 ```
 :normal .
 ```
+Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`
+
+Force syntax: `:set syntax=java`  
+
 #### Mappings from https://github.com/amix/vimrc  
 leader: ` map <leader> ,`  
 Spell Check: `map <leader>ss :setlocal spell!<cr>`  
@@ -91,5 +95,3 @@ map :noh<cr> <leader><cr>
 New tab: `map tn <cr> :tabnew<cr>`  
 
 Replace text: `vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>`  
-
-Force syntax: `:set syntax=java`  
