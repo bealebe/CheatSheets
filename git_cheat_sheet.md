@@ -143,4 +143,5 @@ References:
 - http://gitref.org/branching/
 - http://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository
 - http://rogerdudler.github.io/git-guide/
+- https://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit  
 
