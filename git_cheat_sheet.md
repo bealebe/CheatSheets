@@ -59,7 +59,9 @@ git commit --amend --author="Author Name <email@address.com>"
 ```
 
 Revert a commit (and add new entry to commit history) `git revert <commit_hash>`  
-Revert last `n` commits (and add `n` entries to commit history) `git revert HEAD~n..HEAD`  
+Revert last `n` commits and add `n` entries to commit history `git revert HEAD~n..HEAD`  
+Revert commits between A and Z (inclusively) `git revert --no-commit A..Z`  
+
 Remove local changes (untracked files are ignored) `git reset --hard`  
 Remove last `n` commits from commit history (if it has not been pushed) and:
 - keep *staged* changes `git reset --soft HEAD~n`  
