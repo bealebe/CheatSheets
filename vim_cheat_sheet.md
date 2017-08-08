@@ -2,7 +2,7 @@
 ## Commands
 ### Opening vim
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`  
-Open vim without sourcing source.vim `vim u source.vim`
+Open vim without sourcing source.vim `vim u source.vim` (?)
 
 ### Normal
 #### Operators
@@ -70,7 +70,7 @@ Toggle select mode `<C-g>` (seldom used)
 Enable character-wise visual mode `v`  
 Enable line-wise visual mode `V`  
 Enable block-wise visual mode `<C-v>`  
-Reselect the last visual selection `gv`
+Reselect the last visual selection `gv`  
 Go to other end of highlighted text `o`  
 
 ### Complete mode
