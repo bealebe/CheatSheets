@@ -1,10 +1,8 @@
 # Vim Cheat Sheet
 ## Commands
-
 ### Opening vim
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`  
 Open vim without sourcing source.vim `vim u source.vim`
-
 
 ### Normal
 #### Operators
@@ -57,7 +55,6 @@ forward `/`
 back `?`  
 highlight `:noh`  
 Jump to local variable declaration `gd`  
-
 #### Switch mode
 Normal-insert mode `<C-o>`  
 eg. `<C-o>zz` will switch to normal-insert mode scroll to the middle  
@@ -69,8 +66,12 @@ Insert char by hex code `<C-v>u{1234}`
 Insert char by digraph `<C-k>{char1}{char2}`. eg. `<C-k>12` results in a fraction (`:help digraphs-default`)
 
 ### Visual
-Block mode selection `C-v`  
-Reselect text `gv`  
+Toggle select mode `<C-g>` (seldom used)  
+Enable character-wise visual mode `v`  
+Enable line-wise visual mode `V`  
+Enable block-wise visual mode `<C-v>`  
+Reselect the last visual selection `gv`
+Go to other end of highlighted text `o`  
 
 ### Complete mode
 ```
@@ -110,5 +111,5 @@ highlight `<leader><CR>`
 
 ### Other
 New tab: `<leader>tn`  
-Replace text (in visual mode): `<leader>r<text><CR>`  
+Replace text (in visual mode): `<leader>r{replacement}<CR>`  
 Spell Check: `<leader>ss`  
