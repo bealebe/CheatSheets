@@ -77,6 +77,10 @@ Force syntax: `:set syntax=java`
 
 ### Search
 Search current word `*`  
+forward `/`  
+back `?`  
+highlight `:noh`  
+
 
 ### Other
 Saved views location `~/.vim/view`  
@@ -87,15 +91,14 @@ Jump to local variable declaration `gd`
 ## Mappings 
 https://github.com/amix/vimrc  
 
+leader: `,`  
+
 ### Search:
-```
-map <space> /
-map <c-space> ?
-map :noh<cr> <leader><cr> 
-```
+forward `<space>`  
+back `<c-space>`  
+highlight `<leader><CR>`  
 
 ### Other
-New tab: `map tn <cr> :tabnew<cr>`  
-Replace text: `vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>`  
-leader: ` map <leader> ,`  
-Spell Check: `map <leader>ss :setlocal spell!<cr>`  
+New tab: `<leader>tn`  
+Replace text (in visual mode): `<leader>r<text><CR>`  
+Spell Check: `<leader>ss`  
