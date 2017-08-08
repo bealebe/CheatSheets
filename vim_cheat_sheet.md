@@ -56,6 +56,11 @@ Search current word `*`
 forward `/`  
 back `?`  
 highlight `:noh`  
+Jump to local variable declaration `gd`  
+
+#### Switch mode
+Normal-insert mode `<C-o>`  
+eg. `<C-o>zz` will switch to normal-insert mode scroll to the middle  
 
 ### Insert
 Insert text from a register `Ctrl+r`  
@@ -71,7 +76,6 @@ i C-x
 	C-p, C-n # Word completion
 	C-l Line completion
 ```
-Jump to local variable declaration `gd`  
 
 ### Syntax
 Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
