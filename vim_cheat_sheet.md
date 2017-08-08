@@ -1,4 +1,7 @@
 #### Commands
+Increment the closest number 180 times: `180<C-a>`  
+Decrement the closest number 2 times: `2<C-x>`  
+
 Saved views location `~/.vim/view`
 
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`
