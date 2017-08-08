@@ -84,17 +84,18 @@ Repeat command on more than one line in visual mode `:normal .`
 List of scripts(plugins) `:scriptnames`  
 Jump to local variable declaration `gd`  
 
-## Mappings from https://github.com/amix/vimrc  
-leader: ` map <leader> ,`  
-Spell Check: `map <leader>ss :setlocal spell!<cr>`  
+## Mappings 
+https://github.com/amix/vimrc  
 
-Search:
+### Search:
 ```
 map <space> /
 map <c-space> ?
 map :noh<cr> <leader><cr> 
 ```
 
+### Other
 New tab: `map tn <cr> :tabnew<cr>`  
-
 Replace text: `vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>`  
+leader: ` map <leader> ,`  
+Spell Check: `map <leader>ss :setlocal spell!<cr>`  
