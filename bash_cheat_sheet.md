@@ -18,3 +18,6 @@ Delete back to start of line `<C-u>`
 ### Clear current terminal history 
 `history -c`  
 
+### More
+https://learncodethehardway.org/unix/bash_cheat_sheet.pdf  
+
