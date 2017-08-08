@@ -1,12 +1,13 @@
 # Vim Cheat Sheet
-
 ## Commands
 
 ### Opening vim
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`  
 Open vim without sourcing source.vim `vim u source.vim`
 
-### Operators
+
+### Normal
+#### Operators
 Autoindent `=`  
 Swap case `g~`  
 Make lower case `gu`  
@@ -14,9 +15,67 @@ Make upper case case `gU`
 eg. `gUiw` will make the word under the cursor to upper case  
 eg. `guu` will make the whole line lower case  
 
-### Numbers
+#### Numbers
 Increment the closest number 180 times: `180<C-a>`  
 Decrement the closest number 2 times: `2<C-x>`  
+#### Scrolling
+```
+zt # top 
+zz # centre
+zb # bottom
+```
+#### Folding
+```
+zf # fold
+zd # unfold
+```
+#### Joining
+```
+J 
+gJ # includes leading whitespace
+```
+#### Setting marks
+```
+ma # set mark a at current cursor location
+'a # jump to line of mark a (first non-blank character in line)
+d'a # delete from current line to line of mark a
+c'a # change text from current line to line of mark a
+:marks # list all the current marks
+`.  # jump to position where last change occurred in current buffer
+' ' # jump back (to line in current buffer where jumped from)
+```
+#### Record macro
+```
+q {register} # start recording
+q # end recording
+@ {register} # execute macro at register
+@@ # execute previous macro
+```
+#### Search
+Search current word `*`  
+forward `/`  
+back `?`  
+highlight `:noh`  
+
+### Insert
+Insert text from a register `Ctrl+r`  
+Last inserted text `C-a`  
+
+### Visual
+Block mode selection `C-v`  
+Reselect text `gv`  
+
+### Complete mode
+```
+i C-x
+	C-p, C-n # Word completion
+	C-l Line completion
+```
+Jump to local variable declaration `gd`  
+
+### Syntax
+Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
+Force syntax: `:set syntax=java`  
 
 ### Substitute
 ```
@@ -27,74 +86,10 @@ Decrement the closest number 2 times: `2<C-x>`
 :%s/old/new/gc # ask for confirmation each time add 'c'             
 ```
 
-### Scrolling
-```
-zt # top 
-zz # centre
-zb # bottom
-```
-
-### Folding
-```
-zf # fold
-zd # unfold
-```
-
-### Joining
-```
-J 
-gJ # includes leading whitespace
-```
-### Insert
-Insert text from a register `Ctrl+r`  
-Last inserted text `C-a`  
-
-### Visual
-Block mode selection `C-v`  
-Reselect text `gv`  
-
-### Setting marks
-```
-ma # set mark a at current cursor location
-'a # jump to line of mark a (first non-blank character in line)
-d'a # delete from current line to line of mark a
-c'a # change text from current line to line of mark a
-:marks # list all the current marks
-`.  # jump to position where last change occurred in current buffer
-' ' # jump back (to line in current buffer where jumped from)
-```
-
-### Complete mode
-```
-i C-x
-	C-p, C-n # Word completion
-	C-l Line completion
-```
-
-### Record macro
-```
-q {register} # start recording
-q # end recording
-@ {register} # execute macro at register
-@@ # execute previous macro
-```
-
-### Syntax
-Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
-Force syntax: `:set syntax=java`  
-
-### Search
-Search current word `*`  
-forward `/`  
-back `?`  
-highlight `:noh`  
-
-
 ### Other
 Saved views location `~/.vim/view`  
 Repeat command on more than one line in visual mode `:normal .`  
-List of scripts(plugins) `:scriptnames`  
-Jump to local variable declaration `gd`  
+List of plugins (scripts) `:scriptnames`  
 
 ## Mappings 
 https://github.com/amix/vimrc  
