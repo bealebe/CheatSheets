@@ -63,8 +63,9 @@ Normal-insert mode `<C-o>`
 eg. `<C-o>zz` will switch to normal-insert mode scroll to the middle  
 
 ### Insert
-Insert text from a register `Ctrl+r`  
-Last inserted text `C-a`  
+Insert text from a register `<C-r>{register}`. eg. `<C-r>0` will paste the last thing that was copied    
+Last inserted text `<C-a>`    
+
 
 ### Visual
 Block mode selection `C-v`  
