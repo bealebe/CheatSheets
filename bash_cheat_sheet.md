@@ -3,13 +3,14 @@
 `source [file/path]`  
 
 ### Movements
-beginning-of-line `<C-a>`  
-end-of-line `<C-e>`  
-forward-char `<C-f>`  
-backward-char `<C-b>`
+Beginning-of-line `<C-a>`  
+End-of-line `<C-e>`  
+Forward-char `<C-f>`  
+Backward-char `<C-b>`
 
 ### Corrections
-
+Delete back one word `<C-w>`  
+Delete back to start of line `<C-u>`  
 
 ### Hex Editor
 `xxd <filename>`  
