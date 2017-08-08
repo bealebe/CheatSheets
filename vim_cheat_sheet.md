@@ -1,7 +1,7 @@
 #### Commands
 Saved views location `~/.vim/view`
 
-Open vim without sourcing .vimrc `vim -u NONE -N`
+Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`
 
 Open vim without sourcing source.vim `vim u source.vim`
 
