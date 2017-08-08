@@ -64,8 +64,9 @@ eg. `<C-o>zz` will switch to normal-insert mode scroll to the middle
 
 ### Insert
 Insert text from a register `<C-r>{register}`. eg. `<C-r>0` will paste the last thing that was copied    
-Last inserted text `<C-a>`    
-
+Insert last inserted text `<C-a>`    
+Insert char by hex code `<C-v>u{1234}`  
+Insert char by digraph `<C-k>{char1}{char2}`. eg. `<C-k>12` results in a fraction (`:help digraphs-default`)
 
 ### Visual
 Block mode selection `C-v`  
@@ -95,6 +96,7 @@ Force syntax: `:set syntax=java`
 Saved views location `~/.vim/view`  
 Repeat command on more than one line in visual mode `:normal .`  
 List of plugins (scripts) `:scriptnames`  
+Gett numeric code of char under cursor: `ga`  
 
 ## Mappings 
 https://github.com/amix/vimrc  
