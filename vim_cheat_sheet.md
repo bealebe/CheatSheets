@@ -56,8 +56,7 @@ back `?`
 highlight `:noh`  
 Jump to local variable declaration `gd`  
 #### Switch mode
-Normal-insert mode `<C-o>`  
-eg. `<C-o>zz` will switch to normal-insert mode scroll to the middle  
+Normal-insert mode `<C-o>` eg. `<C-o>zz` will switch to normal-insert mode and scroll to the middle  
 
 ### Insert
 Insert text from a register `<C-r>{register}`. eg. `<C-r>0` will paste the last thing that was copied    
@@ -72,6 +71,8 @@ Enable line-wise visual mode `V`
 Enable block-wise visual mode `<C-v>`  
 Reselect the last visual selection `gv`  
 Go to other end of highlighted text `o`  
+Append after ragged visual block `<C-v>{n}j$` followed by `A`  
+Repeat command on more than one line `:normal .` 
 
 ### Complete mode
 ```
@@ -79,11 +80,9 @@ i C-x
 	C-p, C-n # Word completion
 	C-l Line completion
 ```
-
 ### Syntax
 Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
 Force syntax: `:set syntax=java`  
-
 ### Substitute
 ```
 :s/old/new # new for the first old in a line type    
@@ -92,12 +91,13 @@ Force syntax: `:set syntax=java`
 :%s/old/new/g # all occurrences in the file type        
 :%s/old/new/gc # ask for confirmation each time add 'c'             
 ```
+### Tabs and Spaces
+http://vimcasts.org/episodes/tabs-and-spaces/  
 
 ### Other
 Saved views location `~/.vim/view`  
-Repeat command on more than one line in visual mode `:normal .`  
 List of plugins (scripts) `:scriptnames`  
-Gett numeric code of char under cursor: `ga`  
+Get numeric code of char under cursor: `ga`  
 
 ## Mappings 
 https://github.com/amix/vimrc  
