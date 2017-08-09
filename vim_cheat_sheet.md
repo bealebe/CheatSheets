@@ -1,5 +1,4 @@
 # Vim Cheat Sheet
-## Commands
 ### Opening vim
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`  
 Open vim without sourcing source.vim `vim u source.vim` (?)
