@@ -1,4 +1,4 @@
-**Commands** <br />
+# Unix Cheat Sheet
 remove `rm` <br />
 remove directory `rmdir`<br />
 recursive `-r`<br />
