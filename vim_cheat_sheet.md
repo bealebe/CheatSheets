@@ -95,7 +95,7 @@ Saved views location `~/.vim/view`
 List of plugins (scripts) `:scriptnames`  
 Get numeric code of char under cursor: `ga`  
 
-## Mappings 
+## Personalisation
 https://github.com/amix/vimrc  
 
 leader: `,`  
@@ -103,9 +103,17 @@ leader: `,`
 ### Search:
 forward `<space>`  
 back `<c-space>`  
-highlight `<leader><CR>`  
+highlight `<leader><CR>` 
+
+### Plugins
+* mru `<leader>f` opens recent files  
+* nerdtree `<leader>nn` opens nerdtree, `m` opens menu 
+* vim-surround `cs<old><new>`, `ys<new>`, `(visual)S<new>` (?)
+* vim-commentary `gc`
+* vim-yankstack `<C-p>`, `<C-P>`
 
 ### Other
 New tab: `<leader>tn`  
 Replace text (in visual mode): `<leader>r{replacement}<CR>`  
 Spell Check: `<leader>ss`  
+
