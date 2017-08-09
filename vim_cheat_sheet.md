@@ -8,11 +8,8 @@ Open vim without sourcing source.vim `vim u source.vim` (?)
 #### Operators
 Autoindent `=`  
 Swap case `g~`  
-Make lower case `gu`  
-Make upper case case `gU`   
-eg. `gUiw` will make the word under the cursor to upper case  
-eg. `guu` will make the whole line lower case  
-
+Make lower case `gu` eg. `guu` will make the whole line lower case  
+Make upper case case `gU` eg. `gUiw` will make the word under the cursor to upper case  
 #### Numbers
 Increment the closest number 180 times: `180<C-a>`  
 Decrement the closest number 2 times: `2<C-x>`  
