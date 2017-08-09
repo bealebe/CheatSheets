@@ -11,6 +11,7 @@ move/rename `mv`<br />
 differences `diff -u file1 file2`<br />
 create new file `touch`<br />
 Execute previous command that starts with a specific word `!` <br />
+Remove an alias `unalias <alias>`  
 
 current directory `.`<br />
 previous directory `-`<br />
