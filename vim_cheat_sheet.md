@@ -81,6 +81,9 @@
 * all occurrences in the file type `:%s/old/new/g`  
 * ask for confirmation each time add 'c' `:%s/old/new/gc`  
 
+### Register
+* List register `:register`  
+
 ### Complete mode
 ```
 i C-x
