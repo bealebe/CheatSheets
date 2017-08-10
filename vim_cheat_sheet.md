@@ -72,7 +72,7 @@
 * Delete lines 2 to 5 `:2,5d`   
 * Join from current line to end of file `:.,$j`  
 * Print entire file `:%p`. This is the same as `:1,$jp`  
-* `:'<,'>` represents the start and end of the visual selection. eg. ` :'<,'>`s/{old}/{new} ` will substitute {old} with {new} within the visual selection.
+* `:'<,'>` represents the start and end of the visual selection. eg. `` :'<,'>`s/{old}/{new} `` will substitute {old} with {new} within the visual selection.
 
 #### Substitute
 * new for the first old in a line type `:s/old/new`  
