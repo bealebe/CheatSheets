@@ -1,9 +1,10 @@
 # Vim Cheat Sheet
 ### Opening vim
 Open vim in using factory settings (without sourcing .vimrc and in nocompatible mode) `vim -u NONE -N`  
-Open vim without sourcing source.vim `vim u source.vim` (?)
+Open vim without sourcing source.vim `vim u source.vim` (?)  
+Saved views location `~/.vim/view` (?)  
 
-### Normal
+### Normal mode
 #### Operators
 Autoindent `=`  
 Swap case `g~`  
@@ -52,15 +53,17 @@ back `?`
 highlight `:noh`  
 Jump to local variable declaration `gd`  
 #### Switch mode
-Normal-insert mode `<C-o>` eg. `<C-o>zz` will switch to normal-insert mode and scroll to the middle  
+Normal-insert mode `<C-o>` eg. `<C-o>zz` will switch to normal-insert mode and scroll to the middle 
+#### Other
+Get numeric code of char under cursor: `ga`  
 
-### Insert
+### Insert mode
 Insert text from a register `<C-r>{register}`. eg. `<C-r>0` will paste the last thing that was copied    
 Insert last inserted text `<C-a>`    
 Insert char by hex code `<C-v>u{1234}`  
 Insert char by digraph `<C-k>{char1}{char2}`. eg. `<C-k>12` results in a fraction (`:help digraphs-default`)
 
-### Visual
+### Visual mode
 Toggle select mode `<C-g>` (seldom used)  
 Enable character-wise visual mode `v`  
 Enable line-wise visual mode `V`  
@@ -70,16 +73,8 @@ Go to other end of highlighted text `o`
 Append after ragged visual block `<C-v>{n}j$` followed by `A`  
 Repeat command on more than one line `:normal .` 
 
-### Complete mode
-```
-i C-x
-	C-p, C-n # Word completion
-	C-l Line completion
-```
-### Syntax
-Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
-Force syntax: `:set syntax=java`  
-### Substitute
+### Command-line mode
+#### Substitute
 ```
 :s/old/new # new for the first old in a line type    
 :s/old/new/g # new for all 'old's on a line type       
@@ -87,13 +82,19 @@ Force syntax: `:set syntax=java`
 :%s/old/new/g # all occurrences in the file type        
 :%s/old/new/gc # ask for confirmation each time add 'c'             
 ```
+#### Syntax
+Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
+Force syntax: `:set syntax=java`  
+List of plugins (scripts) `:scriptnames` 
+
+#### Complete mode
+```
+i C-x
+	C-p, C-n # Word completion
+	C-l Line completion
+```
 ### Tabs and Spaces
 http://vimcasts.org/episodes/tabs-and-spaces/  
-
-### Other
-Saved views location `~/.vim/view`  
-List of plugins (scripts) `:scriptnames`  
-Get numeric code of char under cursor: `ga`  
 
 ## Personalisation
 https://github.com/amix/vimrc  
