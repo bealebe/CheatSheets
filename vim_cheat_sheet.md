@@ -64,18 +64,24 @@ Append after ragged visual block `<C-v>{n}j$` followed by `A`
 Repeat command on more than one line `:normal .` 
 
 ### Command-line mode
+List plugins (scripts) `:scriptnames`   
+Insert text from a register `:<C-r>{register}`. eg. `:<C-r>0` will paste the last thing that was copied  
+Navigate to line 1 `:1`  
+Jump to end of file `:$`  
+Put text in register after line 3 `:3pu`  
+Delete lines 2 to 5 `:2,5d`   
+Join from current line to end of file `:.,$j`  
+Print entire file `:%p`. This is the same as `:1,$jp`  
+`:'<,'>` represents the start and end of the visual selection. eg. ` `:'<,'>`s/{old}/{new}` ` will substitute {old} with {new} within the visual selection.
+
 #### Substitute
 new for the first old in a line type `:s/old/new`  
 new for all 'old's on a line type `:s/old/new/g`  
 phrases between two line #'s type `:#,#s/old/new/g`  
 all occurrences in the file type `:%s/old/new/g`  
 ask for confirmation each time add 'c' `:%s/old/new/gc`  
-#### Syntax
-Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
-Force syntax: `:set syntax=java`  
-List of plugins (scripts) `:scriptnames` 
 
-#### Complete mode
+### Complete mode
 ```
 i C-x
 	C-p, C-n # Word completion
@@ -95,11 +101,15 @@ back `<c-space>`
 highlight `<leader><CR>` 
 
 ### Plugins
+
 * mru `<leader>f` opens recent files  
 * nerdtree `<leader>nn` opens nerdtree, `m` opens menu 
 * vim-surround `cs<old><new>`, `ys<new>`, `(visual)S<new>` (?)
 * vim-commentary `gc`
 * vim-yankstack `<C-p>`, `<C-P>`
+* vim-syntastic
+	* Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
+	* Force syntax: `:set syntax=java`  
 
 ### Other
 New tab: `<leader>tn`  
