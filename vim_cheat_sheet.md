@@ -14,38 +14,28 @@ Make upper case case `gU`. eg. `gUiw` will make the word under the cursor upper 
 Increment the closest number 180 times: `180<C-a>`  
 Decrement the closest number 2 times: `2<C-x>`  
 #### Scrolling
-```
-zt # top 
-zz # centre
-zb # bottom
-```
+top `zt`  
+centre`zz`  
+bottom`zb`  
 #### Folding
-```
-zf # fold
-zd # unfold
-```
+fold `zf`  
+unfold `zd`  
 #### Joining
-```
-J 
-gJ # includes leading whitespace
-```
+`J`  
+`gJ` includes leading whitespace  
 #### Setting marks
-```
-ma # set mark a at current cursor location
-'a # jump to line of mark a (first non-blank character in line)
-d'a # delete from current line to line of mark a
-c'a # change text from current line to line of mark a
-:marks # list all the current marks
-`.  # jump to position where last change occurred in current buffer
-' ' # jump back (to line in current buffer where jumped from)
-```
+set mark a at current cursor location `ma`  
+jump to line of mark a (first non-blank character in line) `'a`  
+delete from current line to line of mark a `d'a`   
+change text from current line to line of mark a `c'a`   
+list all the current marks `:marks`   
+jump to position where last change occurred in current buffer `` `. ``   
+jump back (to line in current buffer where jumped from) `''`    
 #### Record macro
-```
-q {register} # start recording
-q # end recording
-@ {register} # execute macro at register
-@@ # execute previous macro
-```
+start recording `q{register}`  
+end recording `q`  
+execute macro at register `@{register}`  
+execute previous macro `@@`  
 #### Search
 Search current word `*`  
 forward `/`  
@@ -75,13 +65,11 @@ Repeat command on more than one line `:normal .`
 
 ### Command-line mode
 #### Substitute
-```
-:s/old/new # new for the first old in a line type    
-:s/old/new/g # new for all 'old's on a line type       
-:#,#s/old/new/g # phrases between two line #'s type       
-:%s/old/new/g # all occurrences in the file type        
-:%s/old/new/gc # ask for confirmation each time add 'c'             
-```
+new for the first old in a line type `:s/old/new`  
+new for all 'old's on a line type `:s/old/new/g`  
+phrases between two line #'s type `:#,#s/old/new/g`  
+all occurrences in the file type `:%s/old/new/g`  
+ask for confirmation each time add 'c' `:%s/old/new/gc`  
 #### Syntax
 Disbale auto-checking in syntastic plugin `:SyntasticToggleMode`  
 Force syntax: `:set syntax=java`  
@@ -117,4 +105,6 @@ highlight `<leader><CR>`
 New tab: `<leader>tn`  
 Replace text (in visual mode): `<leader>r{replacement}<CR>`  
 Spell Check: `<leader>ss`  
+
+
 
