@@ -61,7 +61,6 @@
 * Reselect the last visual selection `gv`  
 * Go to other end of highlighted text `o`  
 * Append after ragged visual block `<C-v>{n}j$` followed by `A`  
-* Repeat command on more than one line `:normal .` 
 
 ### Command-line mode
 * List plugins (scripts) `:scriptnames`   
@@ -73,6 +72,13 @@
 * Join from current line to end of file `:.,$j`  
 * Print entire file `:%p`. This is the same as `:1,$jp`  
 * `:'<,'>` represents the start and end of the visual selection. eg. `` :'<,'>`s/{old}/{new} `` will substitute {old} with {new} within the visual selection.
+* Copy line 6 to just below the current line `:6copy` or `:6co` or `:6t`  
+* Move line 2 to just below current line `:2move .` or `:2m .`
+* Repeat the last command from line 2 to eof `:2,$ normal .` 
+* Append a semicolon to every line `:%normal A;`  
+* Repeate last Ex command `@:`  
+* Rever last Ex command `<C-o>`  
+* Execute previous Ex command `@@`  
 
 #### Substitute
 * new for the first old in a line type `:s/old/new`  
