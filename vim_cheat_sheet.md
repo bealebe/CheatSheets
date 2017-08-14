@@ -79,6 +79,13 @@
 * Repeate last Ex command `@:`  
 * Rever last Ex command `<C-o>`  
 * Execute previous Ex command `@@`  
+* Insert current word at commmand prompt `<C-r><C-w>` eg. `:help <C-r><C-w>`  
+* Open search history `q\`  
+* Open command history `q:`  
+* Run shell commands `!{cmd}`. eg. `!ls`  
+* List buffers `:ls`  
+* Open interactive shell session `:shell` or `<C-z>`  
+* Exit interactive shell session `exit` or `fg`  
 
 #### Substitute
 * new for the first old in a line type `:s/old/new`  
