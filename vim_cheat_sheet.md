@@ -23,14 +23,6 @@
 #### Joining
 * `J`  
 * `gJ` includes leading whitespace  
-#### Setting marks
-* Set mark a at current cursor location `ma`  
-* Jump to line of mark a (first non-blank character in line) `'a`  
-* Delete from current line to line of mark a `d'a`   
-* Change text from current line to line of mark a `c'a`   
-* List all the current marks `:marks`   
-* Jump to position where last change occurred in current buffer `` `. ``   
-* Jump back (to line in current buffer where jumped from) `''`    
 #### Record macro
 * Start recording `q{register}`  
 * End recording `q`  
@@ -93,6 +85,15 @@
 * phrases between two line #'s type `:#,#s/old/new/g`  
 * all occurrences in the file type `:%s/old/new/g`  
 * ask for confirmation each time add 'c' `:%s/old/new/gc`  
+
+### Marks
+* Set mark `a` at current cursor location `ma`  
+* Jump to line of mark `a` (first non-blank character in line) `'a`  
+* Jump to line and column of mark `a` (first non-blank character in line) `` `a ``  
+* List all the current marks `:marks`   
+* Jump to position where last change occurred in current buffer `` `. ``   
+* Jump back (to line in current buffer where jumped from) `''`   
+* Jump back (to line and column in current buffer where jumped from) ``` `` ``` 
 
 ### Register
 * List register `:register`  
