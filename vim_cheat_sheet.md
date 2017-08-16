@@ -95,8 +95,14 @@
 * Jump back (to line in current buffer where jumped from) `''`   
 * Jump back (to line and column in current buffer where jumped from) ``` `` ``` 
 
-### Register
-* List register `:register`  
+### Registers
+* List registers `:register`  
+* Transpose two chars `xp`  
+* Transpose two lines `ddp`  
+* Yank current word into register `a`: `"ayiw`  
+* Put current word from register `a`: `"ap`  
+* Put word from yank register `"0p`
+* Check if system clipboard registers are enabled `:version` and look for `+xterm_clipboard`  
 
 ### Complete mode
 ```
