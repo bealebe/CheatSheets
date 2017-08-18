@@ -127,7 +127,10 @@ leader: `,`
 
 * mru `<leader>f` opens recent files  
 * nerdtree `<leader>nn` opens nerdtree, `m` opens menu 
-* vim-surround `cs<old><new>`, `ys<new>`, `(visual)S<new>` (?)
+* vim-surround 
+	* Change `cs{old}{new>}`
+	* Add `ys{new}` or in visual mode `S{new}` (doesn't seem to work with my settings)
+	* Delete `ds{old}`
 * vim-commentary `gc`
 * vim-yankstack `<C-p>`, `<C-P>`
 * vim-syntastic
