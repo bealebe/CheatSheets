@@ -29,3 +29,6 @@ Get the current user name `echo "$USER"`
 List aliases `alias`  
 Remove an alias `unalias <alias>`  
 
+Terminal pager `less <file>`  
+Read files sequentially `cat <file1> <file2>`   
+
