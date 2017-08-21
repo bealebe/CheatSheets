@@ -141,3 +141,5 @@ leader: `,`
 * New tab: `<leader>tn`  
 * Replace text (in visual mode): `<leader>r{replacement}<CR>`  
 * Spell Check: `<leader>ss`  
+* Move a line of text using ALT+[jk] or Command+[jk] on mac
+
