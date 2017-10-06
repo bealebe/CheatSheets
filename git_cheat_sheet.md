@@ -86,7 +86,7 @@ Merge two repos (where b becomes the repo)
 cd path/to/project-b
 git remote add project-a https://github.com/{user}/project-a
 git fetch project-a
-git merge project-a/master
+git merge --allow-unrelated-histories project-a/master
 git remote remove project-a
 ```
 
